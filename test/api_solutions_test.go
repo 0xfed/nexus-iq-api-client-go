@@ -1,7 +1,7 @@
 /*
 Sonatype Lifecycle Public REST API
 
-Testing PolicyWaiverAPIService
+Testing SolutionsAPIService
 
 */
 
@@ -14,24 +14,22 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	sonatypeiq "github.com/sonatype-nexus-community/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
-func Test_sonatypeiq_PolicyWaiverAPIService(t *testing.T) {
+func Test_sonatypeiq_SolutionsAPIService(t *testing.T) {
 
 	configuration := sonatypeiq.NewConfiguration()
 	apiClient := sonatypeiq.NewAPIClient(configuration)
 
-	t.Run("Test PolicyWaiverAPIService AddPolicyWaiver", func(t *testing.T) {
+	t.Run("Test SolutionsAPIService GetLicensedSolutions", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
-		var policyViolationId string
-		var ownerType string
-
-		httpRes, err := apiClient.PolicyWaiverAPI.AddPolicyWaiver(context.Background(), policyViolationId, ownerType).Execute()
+		resp, httpRes, err := apiClient.SolutionsAPI.GetLicensedSolutions(context.Background()).Execute()
 
 		require.Nil(t, err)
+		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})

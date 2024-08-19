@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	sonatypeiq "github.com/sonatype-nexus-community/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func Test_sonatypeiq_SourceControlAPIService(t *testing.T) {
@@ -30,6 +30,20 @@ func Test_sonatypeiq_SourceControlAPIService(t *testing.T) {
 		var internalOwnerId string
 
 		resp, httpRes, err := apiClient.SourceControlAPI.AddSourceControl(context.Background(), ownerType, internalOwnerId).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test SourceControlAPIService AutomaticRoleAssignment", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var publicId string
+
+		resp, httpRes, err := apiClient.SourceControlAPI.AutomaticRoleAssignment(context.Background(), publicId).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)

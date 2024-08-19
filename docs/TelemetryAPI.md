@@ -23,12 +23,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	sonatypeiq "github.com/sonatype-nexus-community/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func main() {
 	userAgent := "userAgent_example" // string |  (optional)
-	requestBody := map[string]string{"key": "Inner_example"} // map[string]string |  (optional)
+	requestBody := map[string]map[string]interface{}{"key": map[string]interface{}(123)} // map[string]map[string]interface{} |  (optional)
 
 	configuration := sonatypeiq.NewConfiguration()
 	apiClient := sonatypeiq.NewAPIClient(configuration)
@@ -52,7 +52,7 @@ Other parameters are passed through a pointer to a apiPostExternalTelemetryReque
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userAgent** | **string** |  | 
- **requestBody** | **map[string]string** |  | 
+ **requestBody** | **map[string]map[string]interface{}** |  | 
 
 ### Return type
 

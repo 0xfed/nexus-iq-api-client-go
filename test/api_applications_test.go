@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	sonatypeiq "github.com/sonatype-nexus-community/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func Test_sonatypeiq_ApplicationsAPIService(t *testing.T) {
@@ -94,79 +94,6 @@ func Test_sonatypeiq_ApplicationsAPIService(t *testing.T) {
 		var organizationId string
 
 		resp, httpRes, err := apiClient.ApplicationsAPI.GetApplicationsByOrganizationId(context.Background(), organizationId).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test ApplicationsAPIService GetData", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var applicationPublicId string
-		var scanId string
-
-		httpRes, err := apiClient.ApplicationsAPI.GetData(context.Background(), applicationPublicId, scanId).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test ApplicationsAPIService GetDependencyTree", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var applicationPublicId string
-		var scanId string
-
-		resp, httpRes, err := apiClient.ApplicationsAPI.GetDependencyTree(context.Background(), applicationPublicId, scanId).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test ApplicationsAPIService GetPolicyViolationDiff", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var applicationPublicId string
-
-		resp, httpRes, err := apiClient.ApplicationsAPI.GetPolicyViolationDiff(context.Background(), applicationPublicId).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test ApplicationsAPIService GetPolicyViolations1", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var applicationPublicId string
-		var scanId string
-
-		resp, httpRes, err := apiClient.ApplicationsAPI.GetPolicyViolations1(context.Background(), applicationPublicId, scanId).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test ApplicationsAPIService GetRawData", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var applicationPublicId string
-		var scanId string
-
-		resp, httpRes, err := apiClient.ApplicationsAPI.GetRawData(context.Background(), applicationPublicId, scanId).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)

@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	sonatypeiq "github.com/sonatype-nexus-community/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func Test_sonatypeiq_SbomAPIService(t *testing.T) {
@@ -30,6 +30,21 @@ func Test_sonatypeiq_SbomAPIService(t *testing.T) {
 		var version string
 
 		httpRes, err := apiClient.SbomAPI.DeleteSbomVersion(context.Background(), applicationId, version).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test SbomAPIService DeleteVulnerabilityAnalysis", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var applicationId string
+		var version string
+		var refId string
+
+		httpRes, err := apiClient.SbomAPI.DeleteVulnerabilityAnalysis(context.Background(), applicationId, version, refId).Execute()
 
 		require.Nil(t, err)
 		assert.Equal(t, 200, httpRes.StatusCode)

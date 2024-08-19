@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **BaseUrl** | Pointer to **NullableString** |  | [optional] 
 **ForceBaseUrl** | Pointer to **NullableBool** |  | [optional] 
+**ADVANCED_REPORTING_INSIGHTS_ENABLED** | Pointer to **NullableBool** |  | [optional] 
 
 ## Methods
 
@@ -96,6 +97,41 @@ HasForceBaseUrl returns a boolean if a field has been set.
 `func (o *SystemConfig) UnsetForceBaseUrl()`
 
 UnsetForceBaseUrl ensures that no value is present for ForceBaseUrl, not even an explicit nil
+### GetADVANCED_REPORTING_INSIGHTS_ENABLED
+
+`func (o *SystemConfig) GetADVANCED_REPORTING_INSIGHTS_ENABLED() bool`
+
+GetADVANCED_REPORTING_INSIGHTS_ENABLED returns the ADVANCED_REPORTING_INSIGHTS_ENABLED field if non-nil, zero value otherwise.
+
+### GetADVANCED_REPORTING_INSIGHTS_ENABLEDOk
+
+`func (o *SystemConfig) GetADVANCED_REPORTING_INSIGHTS_ENABLEDOk() (*bool, bool)`
+
+GetADVANCED_REPORTING_INSIGHTS_ENABLEDOk returns a tuple with the ADVANCED_REPORTING_INSIGHTS_ENABLED field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetADVANCED_REPORTING_INSIGHTS_ENABLED
+
+`func (o *SystemConfig) SetADVANCED_REPORTING_INSIGHTS_ENABLED(v bool)`
+
+SetADVANCED_REPORTING_INSIGHTS_ENABLED sets ADVANCED_REPORTING_INSIGHTS_ENABLED field to given value.
+
+### HasADVANCED_REPORTING_INSIGHTS_ENABLED
+
+`func (o *SystemConfig) HasADVANCED_REPORTING_INSIGHTS_ENABLED() bool`
+
+HasADVANCED_REPORTING_INSIGHTS_ENABLED returns a boolean if a field has been set.
+
+### SetADVANCED_REPORTING_INSIGHTS_ENABLEDNil
+
+`func (o *SystemConfig) SetADVANCED_REPORTING_INSIGHTS_ENABLEDNil(b bool)`
+
+ SetADVANCED_REPORTING_INSIGHTS_ENABLEDNil sets the value for ADVANCED_REPORTING_INSIGHTS_ENABLED to be an explicit nil
+
+### UnsetADVANCED_REPORTING_INSIGHTS_ENABLED
+`func (o *SystemConfig) UnsetADVANCED_REPORTING_INSIGHTS_ENABLED()`
+
+UnsetADVANCED_REPORTING_INSIGHTS_ENABLED ensures that no value is present for ADVANCED_REPORTING_INSIGHTS_ENABLED, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
