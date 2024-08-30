@@ -30,7 +30,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	sonatypeiq "github.com/4077/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func main() {
@@ -94,7 +94,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	sonatypeiq "github.com/4077/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func main() {
@@ -166,7 +166,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	sonatypeiq "github.com/4077/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func main() {
@@ -232,7 +232,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	sonatypeiq "github.com/4077/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func main() {
@@ -300,7 +300,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	sonatypeiq "github.com/4077/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func main() {
@@ -366,7 +366,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	sonatypeiq "github.com/4077/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func main() {
@@ -434,7 +434,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	sonatypeiq "github.com/4077/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func main() {
@@ -505,7 +505,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	sonatypeiq "github.com/4077/nexus-iq-api-client-go"
+	sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 )
 
 func main() {

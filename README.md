@@ -22,7 +22,7 @@ go get golang.org/x/net/context
 Put the package under your project folder and add the following in import:
 
 ```go
-import sonatypeiq "github.com/4077/nexus-iq-api-client-go"
+import sonatypeiq "github.com/0xfed/nexus-iq-api-client-go"
 ```
 
 To use a proxy, set the environment variable `HTTP_PROXY`:

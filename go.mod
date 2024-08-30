@@ -1,4 +1,4 @@
-module github.com/4077/nexus-iq-api-client-go
+module github.com/0xfed/nexus-iq-api-client-go
 
 go 1.18
 
