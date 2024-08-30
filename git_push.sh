@@ -14,7 +14,7 @@ if [ "$git_host" = "" ]; then
 fi
 
 if [ "$git_user_id" = "" ]; then
-    git_user_id="0xfed"
+    git_user_id="4077"
     echo "[INFO] No command line input provided. Set \$git_user_id to $git_user_id"
 fi
 

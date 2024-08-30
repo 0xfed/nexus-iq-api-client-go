@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: Sonatype Lifecycle Public REST API
-  version: 1.180.0-01
+  version: 1.181.0-01
 servers:
 - url: /
 security:
@@ -26103,13 +26103,13 @@ components:
         ADVANCED_REPORTING_INSIGHTS_ENABLED: true
         forceBaseUrl: true
       properties:
+        ADVANCED_REPORTING_INSIGHTS_ENABLED:
+          nullable: true
+          type: boolean
         baseUrl:
           nullable: true
           type: string
         forceBaseUrl:
-          nullable: true
-          type: boolean
-        ADVANCED_REPORTING_INSIGHTS_ENABLED:
           nullable: true
           type: boolean
     SystemConfigProperty:
