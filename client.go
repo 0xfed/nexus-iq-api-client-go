@@ -95,6 +95,8 @@ type APIClient struct {
 
 	LabelsAPI *LabelsAPIService
 
+	LegacyViolationsAPI *LegacyViolationsAPIService
+
 	LicenseLegalMetadataAPI *LicenseLegalMetadataAPIService
 
 	OrganizationsAPI *OrganizationsAPIService
@@ -179,6 +181,7 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	c.EndpointsAPI = (*EndpointsAPIService)(&c.common)
 	c.FirewallAPI = (*FirewallAPIService)(&c.common)
 	c.LabelsAPI = (*LabelsAPIService)(&c.common)
+	c.LegacyViolationsAPI = (*LegacyViolationsAPIService)(&c.common)
 	c.LicenseLegalMetadataAPI = (*LicenseLegalMetadataAPIService)(&c.common)
 	c.OrganizationsAPI = (*OrganizationsAPIService)(&c.common)
 	c.PoliciesAPI = (*PoliciesAPIService)(&c.common)

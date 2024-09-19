@@ -181,6 +181,8 @@ Class | Method | HTTP request | Description
 *LabelsAPI* | [**GetApplicableLabels**](docs/LabelsAPI.md#getapplicablelabels) | **Get** /api/v2/labels/{ownerType}/{ownerId}/applicable | 
 *LabelsAPI* | [**GetLabels**](docs/LabelsAPI.md#getlabels) | **Get** /api/v2/labels/{ownerType}/{ownerId} | 
 *LabelsAPI* | [**UpdateLabel**](docs/LabelsAPI.md#updatelabel) | **Put** /api/v2/labels/{ownerType}/{ownerId} | 
+*LegacyViolationsAPI* | [**RestLegacyViolationsOrganizationOrganizationIdGet**](docs/LegacyViolationsAPI.md#restlegacyviolationsorganizationorganizationidget) | **Get** /rest/legacyViolations/organization/{organizationId} | Get legacy violations for an organization
+*LegacyViolationsAPI* | [**RestLegacyViolationsOrganizationOrganizationIdPut**](docs/LegacyViolationsAPI.md#restlegacyviolationsorganizationorganizationidput) | **Put** /rest/legacyViolations/organization/{organizationId} | Update legacy violations for an organization
 *LicenseLegalMetadataAPI* | [**DeleteAttributionReportTemplate**](docs/LicenseLegalMetadataAPI.md#deleteattributionreporttemplate) | **Delete** /api/v2/licenseLegalMetadata/report-template/{id} | 
 *LicenseLegalMetadataAPI* | [**GetAllAttributionReportTemplates**](docs/LicenseLegalMetadataAPI.md#getallattributionreporttemplates) | **Get** /api/v2/licenseLegalMetadata/report-template | 
 *LicenseLegalMetadataAPI* | [**GetAttributionReportTemplateById**](docs/LicenseLegalMetadataAPI.md#getattributionreporttemplatebyid) | **Get** /api/v2/licenseLegalMetadata/report-template/{id} | 
@@ -471,6 +473,7 @@ Class | Method | HTTP request | Description
  - [ImportSbomRequest](docs/ImportSbomRequest.md)
  - [InnerSourceData](docs/InnerSourceData.md)
  - [LabelsByOwner](docs/LabelsByOwner.md)
+ - [LegacyViolationsResponse](docs/LegacyViolationsResponse.md)
  - [LegalSourceLinkDTO](docs/LegalSourceLinkDTO.md)
  - [License](docs/License.md)
  - [LicenseObligationDTO](docs/LicenseObligationDTO.md)
@@ -483,6 +486,7 @@ Class | Method | HTTP request | Description
  - [PolicyOwner](docs/PolicyOwner.md)
  - [PolicyTag](docs/PolicyTag.md)
  - [ReferenceLink](docs/ReferenceLink.md)
+ - [RestLegacyViolationsOrganizationOrganizationIdPutRequest](docs/RestLegacyViolationsOrganizationOrganizationIdPutRequest.md)
  - [RootCause](docs/RootCause.md)
  - [SBOMVulnerabilityAnalysisRequest](docs/SBOMVulnerabilityAnalysisRequest.md)
  - [SbomComponentDTO](docs/SbomComponentDTO.md)
